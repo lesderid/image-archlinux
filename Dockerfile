@@ -1,5 +1,4 @@
-## -*- docker-image-name: "armbuild/scw-distrib-archlinux:latest" -*-
-FROM armbuild/archlinux-disk:2014-12-02
+FROM base/archlinux
 MAINTAINER Scaleway <opensource@scaleway.com> (@scaleway)
 
 
@@ -78,7 +77,7 @@ RUN passwd -d root
 
 # Cleanup
 RUN pacman-db-upgrade \
- && pacman -Rns linux-armv7 --noconfirm \
+ && pacman -Rns linux --noconfirm \
  && pacman -Sc --noconfirm \
  && rm -rf /var/cache/pacman/pkg \
  && localepurge-config && localepurge \
