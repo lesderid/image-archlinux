@@ -8,7 +8,7 @@ VENDOR_URL =		https://www.archlinux.org/
 
 IMAGE_VOLUME_SIZE =	50G
 IMAGE_BOOTSCRIPT =	latest
-IMAGE_NAME =		Arch Linux
+IMAGE_NAME =		ArchLinux
 
 
 ## Image tools  (https://github.com/scaleway/image-tools)
