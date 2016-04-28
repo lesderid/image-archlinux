@@ -1,4 +1,4 @@
-# Archlinux image on Scaleway
+# Arch Linux image on Scaleway
 
 [![Build Status](https://travis-ci.org/lesderid/image-archlinux.svg?branch=master)](https://travis-ci.org/lesderid/image-archlinux)
 
@@ -28,7 +28,7 @@ Full list of commands available at: [scaleway/image-tools](https://github.com/sc
 
 ## Testing
     
-To test your image, find the id on your images page and run:
+To test your image, run:
 
     $ scw run --tmp-ssh-key --name="archlinux" <IMAGE_ID>
 
