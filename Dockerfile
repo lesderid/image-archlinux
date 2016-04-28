@@ -73,7 +73,6 @@ RUN passwd -d root
 
 # Cleanup
 RUN pacman-db-upgrade \
- && pacman -Rns linux --noconfirm \
  && pacman -Sc --noconfirm \
  && rm -rf /var/cache/pacman/pkg \
  && pacman-db-upgrade
