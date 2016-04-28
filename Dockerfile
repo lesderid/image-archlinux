@@ -5,6 +5,8 @@ MAINTAINER Scaleway <opensource@scaleway.com> (@scaleway)
 # Environment
 ENV SCW_BASE_IMAGE armbuild/scw-archlinux:2014-12-02
 
+# Update the keyring
+RUN pacman -Sy --noconfirm archlinux-keyring
 
 # Force openssl upgrade first (bad symbol issue)
 RUN pacman -Sy --noconfirm --force openssl
