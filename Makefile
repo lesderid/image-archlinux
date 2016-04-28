@@ -1,14 +1,14 @@
 NAME =			archlinux
 VERSION =		latest
 VERSION_ALIASES =	2014-12-02
-TITLE =			Archlinux
-DESCRIPTION =		Archlinux latest
-SOURCE_URL =		https://github.com/scaleway/image-archlinux
-VENDOR_URL =		http://archlinuxarm.org
+TITLE =			Arch Linux
+DESCRIPTION =		A simple, lightweight distribution
+SOURCE_URL =		https://github.com/lesderid/image-archlinux
+VENDOR_URL =		https://www.archlinux.org/
 
 IMAGE_VOLUME_SIZE =	50G
 IMAGE_BOOTSCRIPT =	latest
-IMAGE_NAME =		Archlinux
+IMAGE_NAME =		Arch Linux
 
 
 ## Image tools  (https://github.com/scaleway/image-tools)
