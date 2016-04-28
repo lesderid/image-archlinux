@@ -24,7 +24,6 @@ RUN pacman -Sy --noconfirm \
     htop \
     iptables \
     less \
-    localepurge \
     lsb-release \
     man \
     mg \
@@ -80,5 +79,4 @@ RUN pacman-db-upgrade \
  && pacman -Rns linux --noconfirm \
  && pacman -Sc --noconfirm \
  && rm -rf /var/cache/pacman/pkg \
- && localepurge-config && localepurge \
  && pacman-db-upgrade
