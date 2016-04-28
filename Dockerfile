@@ -15,11 +15,9 @@ RUN pacman -Sy --noconfirm --force openssl
 RUN pacman -Sy --noconfirm \
     bash-completion \
     bc \
-    binutils \
     cronie \
     curl \
     dnsutils \
-    fakeroot \
     htop \
     iptables \
     lsb-release \
@@ -32,11 +30,20 @@ RUN pacman -Sy --noconfirm \
     rsyslog \
     screen \
     socat \
-    sudo \
     tmux \
     vim \
     wget
 
+# Install base-devel
+RUN pacman -Sy --noconfirm --needed base-devel
+
+# Install cool packages
+RUN pacman -Sy --noconfirm \
+    fish \
+    glances \
+    mosh \
+    neovim \
+    openvpn
 
 # Locales
 RUN sed 's/^\([^#]\)/#\1/' -i /etc/locale.gen \
