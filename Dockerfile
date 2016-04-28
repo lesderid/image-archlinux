@@ -1,4 +1,4 @@
-FROM base/archlinux
+FROM derjudge/archlinux
 MAINTAINER lesderid <les@lesderid.net>
 
 # Environment
