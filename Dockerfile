@@ -1,6 +1,5 @@
 FROM base/archlinux
-MAINTAINER Scaleway <opensource@scaleway.com> (@scaleway)
-
+MAINTAINER lesderid <les@lesderid.net>
 
 # Environment
 ENV SCW_BASE_IMAGE armbuild/scw-archlinux:2014-12-02
