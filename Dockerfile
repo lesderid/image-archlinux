@@ -19,17 +19,12 @@ RUN pacman -Sy --noconfirm \
     binutils \
     cronie \
     curl \
-    dhcpcd \
     dnsutils \
     fakeroot \
-    file \
     htop \
     iptables \
-    less \
     lsb-release \
-    man \
     mg \
-    nano \
     nbd \
     ntp \
     openbsd-netcat \
