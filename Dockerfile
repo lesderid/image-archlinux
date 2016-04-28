@@ -55,10 +55,10 @@ ADD ./patches/usr/ /usr/
 
 # Systemd
 RUN systemctl enable \
-        oc-fetch-ssh-keys \
-	oc-sync-kernel-modules \
-	oc-generate-ssh-keys \
-	oc-gen-machine-id.service \
+        scw-fetch-ssh-keys \
+	scw-sync-kernel-modules \
+	scw-generate-ssh-keys \
+	scw-gen-machine-id.service \
 	ntpdate.service \
  	sshd.service \
 	serial-getty@ttyS0.service \
