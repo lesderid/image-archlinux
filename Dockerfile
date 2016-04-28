@@ -39,7 +39,7 @@ RUN pacman -Sy --noconfirm \
 
 
 # Locales
-RUN sed -e s/^\#en_US.UTF-8/en_US.UTF-8/;s/^\#en_GB.UTF-8/en_GB.UTF-8/ -i /etc/locale.gen \
+RUN sed -e 's/^\#en_US.UTF-8/en_US.UTF-8/;s/^\#en_GB.UTF-8/en_GB.UTF-8/' -i /etc/locale.gen \
  && echo LANG=en_GB.UTF-8 > /etc/locale.conf \
  && locale-gen
 
