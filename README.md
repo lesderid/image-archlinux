@@ -1,19 +1,16 @@
 # Archlinux image on Scaleway
 
-[![Build Status](https://travis-ci.org/scaleway/image-archlinux.svg?branch=master)](https://travis-ci.org/scaleway/image-archlinux)
-[![](https://badge.imagelayers.io/scaleway/archlinux:latest.svg)](https://imagelayers.io/?images=scaleway/archlinux:latest 'Get your own badge on imagelayers.io')
+[![Build Status](https://travis-ci.org/lesderid/image-archlinux.svg?branch=master)](https://travis-ci.org/lesderid/image-archlinux)
 
-**Warning: this image is not yet working**
-
-Scripts to build the official Archlinux image on Scaleway
+Scripts to build an Arch Linux (x86_64) image on Scaleway
 
 This image is built using [Image Tools](https://github.com/scaleway/image-tools) and is based on the official [Ubuntu](https://github.com/scaleway/image-ubuntu) image.
 
-![](http://archlinuxarm.org/sites/default/files/wikilogo_0_0.png)
+![](https://d11xdyzr0div58.cloudfront.net/static/logos/archlinux-logo-dark-scalable.518881f04ca9.svg)
 
 ---
 
-**This image is meant to be used on a C1 server.**
+**This image is meant to be used on a VC1 server.**
 
 We use the Docker's building system and convert it at the end to a disk image that will boot on real servers without Docker. Note that the image is still runnable as a Docker container for debug or for inheritance.
 
@@ -21,13 +18,19 @@ We use the Docker's building system and convert it at the end to a disk image th
 
 ---
 
-## Install
+## Building
 
-Build and write the image to /dev/nbd1 (see [documentation](https://www.scaleway.com/docs/create_an_image_with_docker))
+Build and add the image to [your account](https://cloud.scaleway.com/#/images):
 
-    $ make install
-
+    $ make image_on_local
+    
 Full list of commands available at: [scaleway/image-tools](https://github.com/scaleway/image-tools/#commands)
+
+## Testing
+    
+To test your image, find the id on your images page and run:
+
+    $ scw run --tmp-ssh-key --name="archlinux" <IMAGE_ID>
 
 ---
 
@@ -38,4 +41,4 @@ Full list of commands available at: [scaleway/image-tools](https://github.com/sc
 
 ---
 
-A project by [![Scaleway](https://avatars1.githubusercontent.com/u/5185491?v=3&s=42)](https://www.scaleway.com/)
+A project by [![Scaleway](https://avatars1.githubusercontent.com/u/5185491?v=3&s=42)](https://www.scaleway.com/) and lesderid
