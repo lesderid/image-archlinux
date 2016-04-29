@@ -40,6 +40,7 @@ RUN pacman -Sy --noconfirm --needed base-devel
 # Install cool packages
 RUN pacman -Sy --noconfirm \
     fish \
+    git \
     glances \
     mosh \
     neovim \
